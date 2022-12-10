@@ -1,5 +1,4 @@
 class Evklid < ApplicationRecord
-  validates_uniqueness_of :num1, :num2, message: 'Введено не уникальное значение'
   before_save :set_twins
 
   def decoded_twins
